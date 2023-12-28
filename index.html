@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <img src="head.jpg" alt="head">
+        <style>
+            .navbar{
+                background-color: rgb(202, 202, 204);
+                overflow: hidden;
+                z-index: 100;
+            }
+            .nav{
+                float: left;
+                overflow:hidden ;
+            
+            }
+            .nav1 {
+                font-size: 100%;
+                border: 2px;
+                outline: none;
+                color: #000000;
+                padding: 14px 16px;
+                background-color: #CCCCCC;
+                font-family: inherit;
+                margin: 0;
+            }
+            .fa-caret-down:before {
+                content: "\f0d7";
+            }
+           
+            .fa {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .slideshow {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+              }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active {
+                background-color: #000000;
+                color: black;
+            }
+        </style>
+    </head>
+    <div class="navbar">
+        <div class="nav">
+            <a href="">home</a>
+            <button class="nav1"> 
+                About
+                <i class="fa fa-caret-down">
+            
+                </i>
+
+            </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            Admissions
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            Academics
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            Autonomous
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            Departments
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            Research & Innovations
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            T & P
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            student Corner
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="nav">
+        <button class="nav1">
+            facilities
+            <i class="fa fa-caret-down">
+
+            </i>
+        </button>
+      </div>
+      <div class="slideshow">
+        <div class="myslide" style="display:block">
+         <img src="1.jpg" width="100%" height="auto">
+        </div>
+        <a class="next" onclick="plusSlides(1)">></a>
+        <a class="prev" onclick="prevSlides(1)"><</a>
+
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot active" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+        <span class="dot" onclick="currentSlides(4)"></span>
+        <span class="dot" onclick="currentSlides(5)"></span>
+      </div>
+</div>
+</html>
